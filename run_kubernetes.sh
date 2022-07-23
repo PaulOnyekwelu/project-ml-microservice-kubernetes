@@ -16,5 +16,6 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward pod/kub-ml-app-dc564fbb4-wk8ns --address 0.0.0.0 8000:80
+POD=$(kubectl get pod -l app=kub-ml-app -o jsonpath="{.items[0].metadata.name}")
+kubectl port-forward $POD --address 0.0.0.0 8000:80
 
