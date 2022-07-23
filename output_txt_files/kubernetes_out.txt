@@ -1,1 +1,6 @@
-<paste log output from Kubernetes-mediated prediction, here>
+error: failed to create deployment: deployments.apps "kub-ml-app" already exists
+NAME                         READY   STATUS    RESTARTS   AGE
+kub-ml-app-dc564fbb4-wk8ns   1/1     Running   0          2m43s
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
